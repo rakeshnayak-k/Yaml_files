@@ -1,0 +1,68 @@
+--- # Start of YAML file
+# - is user ofr comment
+
+# string
+name: Rakesh
+# string with Quotes ("" are not mandatory we use "" when we have special characters in string)
+city: "VKB"
+# Number
+Age: 25
+# array/list of items
+Skills:
+  - Python
+  - AWS
+  - Django
+  - SQL
+  - Docker
+  - Jenkins
+  - Terraform
+
+# Objects / nested objects
+Laptop:
+  name: "HP LAPTOP-6BFUHCMQ"
+  processor: Intel core i5
+  chip: m1 max
+
+# nested objects or array of objects
+list_of_servers:
+  - server1 :
+    name : EC2
+    volume : 8gb
+  - server2:
+    name : k8s
+    volume : 8gb
+  - server3:
+    name : EC2
+    volume : 100gb
+ 
+# boolean values: we can use True/False or Yes/No
+is_employed: Yes
+is_developer: True
+is_analyst: False
+
+# Since YAML is a superset of JSON,
+# We can also write JSON-style maps and
+# sequences:
+json_map: {"name": "Rakesh"}
+json_seq: [3,2,1,"gooo"]
+
+#'folded block' (using '>') / Folded String
+heading: >
+  Junior Cloud & DevOps Engineer , 
+  AWS Learner Hero , 
+  AWS  DevOps Professional , 
+  Software Developer , 
+
+#'literal block' (using |) / Multi line string
+About me: |
+  Teaching People Simplified Cloud & DevOps topics 😇
+
+  I create new video tutorials every week, which mainly includes Cloud, DevOps, Programming Topics.
+  Subscribe and activate bell notification so that you don't miss new videos 🔔
+
+  I am an AWS Hero 🦸‍♂️ and have 6x AWS Certification  💪
+  Visit ►  https://learn.sandipdas.in
+
+# YAML Anchors and Alias
+some_var: &someVarRef Test Value for Anchors
+some_var_value_referning: *someVarRef

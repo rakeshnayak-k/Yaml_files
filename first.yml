@@ -1,0 +1,36 @@
+--- # Start of YAML file
+# YAML -> YAML Ain't Markup Language
+# Yaml consits key value pairs 
+name : rakesh
+age : 26
+
+# Objcts ?
+server:
+  name : rakeshec2
+  capacity : 50GB
+
+# lists
+social_media:
+  - insta
+  - linkedIn
+  - github
+
+# lists objects
+list_of_servers:
+  - server1 :
+    name : EC2
+    volume : 8gb
+  - server2:
+    name : k8s
+    volume : 8gb
+  - server3:
+    name : EC2
+    volume : 100gb
+
+# multiline string
+testing: |
+  this 
+  is  
+  multiline  
+  string 
+  
